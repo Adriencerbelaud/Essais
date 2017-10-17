@@ -2,9 +2,14 @@
 public class firstClass {
 
 	public static void main(String[] args) {
-		String tab[] = {"Tu as ", " ans"};
+		String tab[] = {"Tu as", " ans"};
 		int age = 18;
-		System.out.print(tab[0] + age + tab[1]);
+		for (int i = 0; i<tab.length; i++ ){
+			if (tab[i] == " ans"){
+				System.out.print(" " + age);
+			}			
+			System.out.print(tab[i]);
+		}
 	}
 
 }
